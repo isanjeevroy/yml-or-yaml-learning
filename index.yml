@@ -1,0 +1,83 @@
+#Indentation
+chai_type: masala_chai
+
+temperature: hot
+servings: 2
+brewing_time: 5
+
+
+chai_recipe:
+  base: black_tea
+  milk: whole_milk
+
+chai_recipe_two:
+  base: black_tea
+  milk: whole_milk
+
+
+# String Data Type
+
+# single line string
+chai_name: Masala Chai
+description: "Chai with cardamon, ginger"
+tagline: 'The best chai in town'
+
+# multi line string
+
+brewing_instruction: |
+  boil water
+  add tea leaves
+  add milk
+
+brewing_instruction_two: >
+  boil water
+  add tea leaves
+  add milk
+
+# Number Data Type
+
+cups_per_day: 3
+cups_per_day_two: 0xFF22FF
+
+is_hot: true
+add_sugar: yes
+add_salt: no
+is_instant: off
+is_consent: on
+
+# null and ~ are same in yaml(yml)
+sweetner: null
+alternative_milk: ~
+
+morning_brew: 2025-01-15
+local_time: 2025-01-15 08:30:01
+
+#collection(array)
+#spices is the list and ginger, cloves, black_pepper, true, 200 are the item
+
+#popular way for list
+spices:
+  - ginger
+  - cloves
+  - black_pepper
+  - true
+  - 200
+
+
+#Earlier used to use (List)
+spices: [cardamom, ginger, cloves]
+
+steeping_times: [3, 2, 1]
+
+#List of list
+chai_categories:
+  - name: Traditional
+    varities:
+      - Masala Chai
+      - Ginger Chai
+      - Cardmon Chai
+  - name: Modern
+    varities:
+      - Vanilla Chai
+      - Chocolate Chai
+
