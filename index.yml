@@ -81,3 +81,49 @@ chai_categories:
       - Vanilla Chai
       - Chocolate Chai
 
+# Dictionary
+masala_chai:
+  ingredients:
+    tea: black_tea
+    liquid:
+      water: 200ml
+      milk: 100ml
+    spices:
+      ginger: 1_inch
+      cinnamon: 1_stick
+  preparation:
+    method: simmer
+    duration: 5_minutes
+
+# List of dictionary
+chai_menu:
+  - name: Masala Chai
+    price: 30
+    size: regular
+  - name: Ginger Chai
+    price: 30
+    size: regular
+
+# Anchor OR Alias
+default_chai_base: &default_base
+  tea: black_tea
+  water: 200ml
+  brewing_time: 5
+
+morning_chai:
+  <<: *default_base #line 114 equal to 109-111 lines.
+  milk: 100ml
+
+evening_chai:
+  <<: *default_base
+  milk: 200ml
+
+#Conversion
+zip_code: !!str 12345 #converting into string
+count: !!int "123" #converting into integer
+
+#It's set of cardamon, ginger and cloves
+unique_spices: !!set
+  ? cardamon
+  ? ginger
+  ? cloves
