@@ -418,3 +418,13 @@ YAML supports:
 * Sets
 
 It is widely used in modern DevOps and cloud-native tools such as Docker, Kubernetes, GitHub Actions, GitLab CI/CD, and many application configuration files.
+
+---
+
+# ⭐ Support
+
+If this repository helps you learn YML(YAML), consider giving it a ⭐ on GitHub.
+
+It helps more developers discover the project.
+
+Happy Learning! 🚀
